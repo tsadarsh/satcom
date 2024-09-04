@@ -1,0 +1,43 @@
+sat_A:
+  G: 6.674e-20            # km^3 kg^-1 s^-2
+  Mp: 5.972e+24           # kg
+  r_n: 20_000             # km
+  theta_n: 0              # rad
+  v_r: 0                  # km/s
+  v_theta: 5              # km/s
+  del_t: 10               # secs
+  stop_iter: 50000
+  period_scaler: 86400    # days 
+
+sat_B:
+  G: 6.674e-20            # km^3 kg^-1 s^-2
+  Mp: 5.972e+24           # kg
+  r_n: 20_000             # km
+  theta_n: 0              # rad
+  v_r: -3                 # km/s
+  v_theta: 5              # km/s
+  del_t: 10               # secs
+  stop_iter: 50000
+  period_scaler: 86400    # days 
+
+sat_C:
+  G: 6.674e-20            # km^3 kg^-1 s^-2
+  Mp: 5.972e+24           # kg
+  r_n: 20_000             # km
+  theta_n: 0              # rad
+  v_r: -6                 # km/s
+  v_theta: 5              # km/s
+  del_t: 10               # secs
+  stop_iter: 50000
+  period_scaler: 86400    # days 
+
+haley:
+  G: 6.674e-29            # Mkm^3 kg^-1 s^-2
+  Mp: 1.9891e+30          # kg
+  r_n: 5_270_000          # km
+  theta_n: 0              # rad
+  v_r: 0                  # Mkm/s
+  v_theta: 0.00091        # Mkm/s
+  del_t: 100              # secs
+  stop_iter: 100000000
+  period_scaler: 31536000 # years 
