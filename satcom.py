@@ -8,7 +8,7 @@ Kp = G * Mp
 r_n = 20_000 # km
 theta_n = 0 # rad
 
-vr_n = -3 # km/s
+vr_n = 0 # km/s
 vt_n = 5 # km/s
 
 del_t = 10 # secs
@@ -39,6 +39,11 @@ for i in range(1, 50000):
     theta_n = theta_n1
     del_r_n = del_r_n1
     del_theta_n = del_theta_n1
+
+major_axis = min_r + max_r
+foci_to_foci = major_axis - (2 * min_r)
+ecc = foci_to_foci / major_axis
+print("Ecc: ", ecc)
 
 
 fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
